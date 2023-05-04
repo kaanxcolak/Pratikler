@@ -58,7 +58,7 @@ public class WeatherForecastController : ControllerBase
     // }
 
 
-    [HttpGet("{id:int}")]  
+    [HttpGet("{id}")]  
     public ActionResult<WeatherForecast> GetById(string id)
     {
         return Enumerable.Range(1, 5).Select(index => new WeatherForecast
